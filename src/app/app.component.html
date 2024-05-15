@@ -1,0 +1,185 @@
+<main>
+
+  <!-- It can be displayed only in Desktop and laptop devices. -->
+  <div class="block Tablet_Device_Size_View:hidden Large_Mobile_Device_Size_View:hidden Medium_Mobile_Device_Size_View:hidden Small_Mobile_Device_Size_View:hidden">
+    <div class="flex justify-center items-center h-screen w-full bg-Cream overflow-hidden landscape:overflow-y-auto">
+      <div class="flex justify-center items-center h-auto w-auto landscape:p-20 landscape:m-auto">
+        <div class="flex justify-start items-start h-auto w-auto bg-White rounded-xl">
+          <div>
+            <img src="../assets/images/image-product-desktop.jpg" alt="The product image is displayed only in Laptop and Desktop devices." class=" h-auto w-[270px] rounded-l-xl" />
+          </div>
+          <div class="flex flex-col h-auto w-[270px] p-6 rounded-r-xl">
+            <div class="mr-auto">
+              <div>
+                <p class="font-Montserrat text-sm font-normal uppercase tracking-widest text-Dark_grayish_blue">{{ title }}</p>
+              </div>
+              <div class="my-5">
+                <h1 class="font-Fraunces text-3xl font-bold leading-8 w-48 text-Very_dark_blue">{{ product_name }}</h1>
+              </div>
+              <div class="my-5">
+                <p class="font-Montserrat text-sm w-60 font-medium text-Dark_grayish_blue">{{ product_description }}</p>
+              </div>
+              <div class="my-5">
+                <div class="flex justify-start items-center font-Fraunces">
+                  <p class="text-3xl font-bold text-Dark_cyan">{{ discount_price }}</p>
+                  <p class="text-sm ml-4 font-normal line-through text-Dark_grayish_blue">{{ actual_price }}</p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <button class="w-full bg-Dark_cyan flex justify-center items-center p-2 rounded-lg hover:bg-cyan-900 hover:transition hover:duration-200 hover:ease-linear">
+                <img src="../assets/images/icon-cart.svg" alt="I had attached shopping cart icon." />
+                <p class="font-Montserrat text-sm font-semibold text-White ml-2">{{ button_name }}</p>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- It can be displayed only in tablet devices. -->
+  <div class="hidden Tablet_Device_Size_View:block Large_Mobile_Device_Size_View:hidden Medium_Mobile_Device_Size_View:hidden Small_Mobile_Device_Size_View:hidden">
+    <div class="flex justify-center items-center h-screen w-full bg-Cream overflow-hidden landscape:overflow-y-auto">
+      <div class="flex justify-center items-center h-auto w-auto landscape:p-20 landscape:m-auto">
+        <div class="flex flex-col justify-center items-center h-auto w-[400px] bg-White rounded-2xl">
+          <img src="../assets/images/image-product-mobile.jpg" alt="The product image is displayed only in tablet and mboile devices." class="h-[200px] w-[400px] rounded-t-2xl" />
+          <div class="mr-auto px-8 py-4">
+            <div class="flex flex-col justify-center">
+              <div class="my-2">
+                <p class="font-Montserrat text-base font-normal uppercase tracking-widest text-Dark_grayish_blue">{{ title }}</p>
+              </div>
+              <div>
+                <h1 class="font-Fraunces text-4xl font-bold w-80 text-Very_dark_blue">{{ product_name }}</h1>
+              </div>
+              <div class="my-4">
+                <p class="font-Montserrat text-base w-[333px] leading-6 font-medium text-Dark_grayish_blue">{{ product_description }}</p>
+              </div>
+              <div>
+                <div class="flex justify-start items-center font-Fraunces">
+                  <p class="text-4xl font-bold text-Dark_cyan">{{ discount_price }}</p>
+                  <p class="text-base ml-4 font-normal line-through text-Dark_grayish_blue">{{ actual_price }}</p>
+                </div>
+              </div>
+              <div class="my-4">
+                <button class="w-full bg-Dark_cyan flex justify-center items-center p-4 rounded-lg hover:bg-cyan-900 hover:transition hover:duration-200 hover:ease-linear">
+                  <img src="../assets/images/icon-cart.svg" alt="I had attached shopping cart icon." class="h-5 w-5" />
+                  <p class="font-Montserrat text-base font-semibold text-White ml-4">{{ button_name }}</p>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- It can be displayed only in large sized mobile devices. -->
+  <div class="hidden Tablet_Device_Size_View:hidden Large_Mobile_Device_Size_View:block Medium_Mobile_Device_Size_View:hidden Small_Mobile_Device_Size_View:hidden">
+    <div class="flex justify-center items-center h-screen w-full bg-Cream">
+      <div class="flex justify-center items-center h-auto w-auto">
+        <div class="flex flex-col justify-center items-center h-auto w-80 bg-White rounded-xl">
+          <img src="../assets/images/image-product-mobile.jpg" alt="This is product image displayed in desktop." class="h-40 w-80 rounded-t-xl" />
+          <div class="mr-auto px-4 py-2">
+            <div class="flex flex-col justify-center">
+              <div class="my-1">
+                <p class="font-Montserrat text-sm font-normal uppercase tracking-widest text-Dark_grayish_blue">{{ title }}</p>
+              </div>
+              <div class="my-2">
+                <h1 class="font-Fraunces text-3xl font-bold w-72 text-Very_dark_blue">{{ product_name }}</h1>
+              </div>
+              <div class="my-1">
+                <p class="font-Montserrat text-sm w-[295px] leading-5 font-medium text-Dark_grayish_blue">{{ product_description }}</p>
+              </div>
+              <div class="my-2">
+                <div class="flex justify-start items-center font-Fraunces">
+                  <p class="text-3xl font-bold text-Dark_cyan">{{ discount_price }}</p>
+                  <p class="text-sm ml-2 font-normal line-through text-Dark_grayish_blue">{{ actual_price }}</p>
+                </div>
+              </div>
+              <div class="my-2">
+                <button class="bg-Dark_cyan w-72 flex justify-center items-center p-3 rounded-lg">
+                  <img src="../assets/images/icon-cart.svg" alt="I had attached shopping cart icon." />
+                  <p class="font-Montserrat text-sm font-semibold text-White ml-4">{{ button_name }}</p>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- It can be displayed only in medium sized mobile devices. -->
+  <div class="hidden Tablet_Device_Size_View:hidden Large_Mobile_Device_Size_View:hidden Medium_Mobile_Device_Size_View:block Small_Mobile_Device_Size_View:hidden">
+    <div class="flex justify-center items-center h-screen w-full bg-Cream">
+      <div class="flex justify-center items-center h-auto w-auto">
+        <div class="flex flex-col justify-center items-center h-auto w-72 bg-White rounded-xl">
+          <img src="../assets/images/image-product-mobile.jpg" alt="This is product image displayed in desktop." class="h-44 w-72 rounded-t-xl" />
+          <div class="mr-auto px-4 py-2">
+            <div class="flex flex-col justify-center">
+              <div class="my-2">
+                <p class="font-Montserrat text-xs font-normal uppercase tracking-widest text-Dark_grayish_blue">{{ title }}</p>
+              </div>
+              <div>
+                <h1 class="font-Fraunces text-2xl font-bold w-64 text-Very_dark_blue">{{ product_name }}</h1>
+              </div>
+              <div class="my-2">
+                <p class="font-Montserrat text-xs w-[250px] leading-4 font-medium text-Dark_grayish_blue">{{ product_description }}</p>
+              </div>
+              <div>
+                <div class="flex justify-start items-center font-Fraunces">
+                  <p class="text-2xl font-bold text-Dark_cyan">{{ discount_price }}</p>
+                  <p class="text-xs ml-2 font-normal line-through text-Dark_grayish_blue">{{ actual_price }}</p>
+                </div>
+              </div>
+              <div class="my-2">
+                <button class="w-full bg-Dark_cyan flex justify-center items-center p-2 rounded-lg">
+                  <img src="../assets/images/icon-cart.svg" alt="I had attached shopping cart icon." />
+                  <p class="font-Montserrat text-xs font-semibold text-White ml-2">{{ button_name }}</p>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- It can be displayed only in small sized mobile devices. -->
+  <div class="hidden Tablet_Device_Size_View:hidden Large_Mobile_Device_Size_View:hidden Medium_Mobile_Device_Size_View:hidden Small_Mobile_Device_Size_View:block">
+    <div class="flex justify-center items-center h-screen w-full bg-Cream">
+      <div class="flex justify-center items-center h-auto w-auto">
+        <div class="flex flex-col justify-center items-center h-auto w-56 bg-White rounded-xl">
+          <img src="../assets/images/image-product-mobile.jpg" alt="This is product image displayed in desktop." class="h-36 w-56 rounded-t-xl" />
+          <div class="mr-auto px-4 py-2">
+            <div class="flex flex-col justify-center">
+              <div class="my-1">
+                <p class="font-Montserrat text-[8px] font-normal uppercase tracking-widest text-Dark_grayish_blue">{{ title }}</p>
+              </div>
+              <div class="my-1">
+                <h1 class="font-Fraunces text-xl font-bold w-48 text-Very_dark_blue">{{ product_name }}</h1>
+              </div>
+              <div class="my-1">
+                <p class="font-Montserrat text-[9px] w-[190px] font-medium text-Dark_grayish_blue">{{ product_description }}</p>
+              </div>
+              <div class="my-1">
+                <div class="flex justify-start items-center font-Fraunces">
+                  <p class="text-xl font-bold text-Dark_cyan">{{ discount_price }}</p>
+                  <p class="text-[8px] ml-1 font-normal line-through text-Dark_grayish_blue">{{ actual_price }}</p>
+                </div>
+              </div>
+              <div class="my-1">
+                <button class="w-full bg-Dark_cyan flex justify-center items-center p-2 rounded-lg">
+                  <img src="../assets/images/icon-cart.svg" alt="I had attached shopping cart icon." />
+                  <p class="font-Montserrat text-[8px] font-semibold text-White ml-2">{{ button_name }}</p>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
